@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="영상 · 음향 포트폴리오" />
+    <title>JIHYUK SHIN — Portfolio</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html">JIHYUK SHIN<sup>®</sup></a>
+      <nav aria-label="주 메뉴">
+        <a class="active" href="#work">WORK</a>
+        <a href="mailto:shind425@gmail.com">CONTACT</a>
+      </nav>
+      <a class="update-link" href="./admin.html">UPDATE ↗</a>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="intro-title">
+        <p class="eyebrow">VIDEO / RECORDING / SR/PA / SYSTEM INTEGRATION</p>
+        <h1 id="intro-title">이미지와 소리로<br />장면의 밀도를 만듭니다.</h1>
+        <p class="intro-copy">VIDEO EDITING · SOUND DESIGN · LIVE SOUND<br />SEOUL, KOREA</p>
+      </section>
+
+      <section id="work" class="work-section" aria-labelledby="work-title">
+        <div class="section-head">
+          <h2 id="work-title">SELECTED WORKS</h2>
+          <p id="work-count"></p>
+        </div>
+        <div class="filters" aria-label="작업 분야 필터">
+          <button class="filter active" data-filter="ALL">ALL</button>
+        </div>
+        <div id="project-grid" class="project-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="about-section" style="min-height:auto; padding:32px 0 72px; display:block;">
+        <a class="outline-link" href="mailto:shind425@gmail.com">LET’S WORK TOGETHER <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer><span>© <span id="year"></span> JIHYUK SHIN</span><span>SEOUL, KOREA</span><a href="./admin.html">UPDATE CONTENT ↗</a></footer>
+    <script src="./data/projects.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
